@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sachinmishra1614@gmail.com'
+EMAIL_HOST_PASSWORD = 'qwertyuiopasdfghjklzxcvbnmmishra@199747'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -37,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'widget_tweaks',
     'accounts',
     'boards',
@@ -131,4 +138,4 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
